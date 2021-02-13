@@ -9,7 +9,7 @@ public class Main {
         String command = "x";
         String entree;
         do {
-            System.out.println("Bienvenue à OceanStar");
+            System.out.println("Bienvenue à OceanStore");
             System.out.println("Liste des utilisateur actuels");
             UsersRepository usersrepo = new UsersRepository();
             Users[] users = usersrepo.getAllUser();
