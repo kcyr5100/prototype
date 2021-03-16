@@ -1,6 +1,8 @@
+/*package controllers;
+
 import domain.Users;
-import repository.LogIn;
-import repository.SignUp;
+import services.LogIn;
+import services.SignUp;
 import repository.UsersRepository;
 
 import java.util.Scanner;
@@ -36,3 +38,4 @@ public class Main {
         }while (!entree.equalsIgnoreCase(command));
     }
 }
+*/

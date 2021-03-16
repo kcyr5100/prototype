@@ -17,7 +17,7 @@ Cet outil permettra  aux étudiants de rapidement retrouver les devoirs et exame
 *modifier un document
 *supprimer un document
 
--Archiviste
+Archiviste
 *signup
 *login
 *creer un document
@@ -29,3 +29,22 @@ Cet outil permettra  aux étudiants de rapidement retrouver les devoirs et exame
 *signup
 *login
 *consulter un document
+
+##documentation d'utilisattion
+
+compiler l'AppDocuments et l'AppUsers séparement pour obtenir 
+un menu different pour la manipulation des documents et des
+utilusateurs, puis entrez votre choix selon le menu
+
+là où l'id est demandé entrer un nombre compris entre 1 et 3
+se refferer sur la base de donnée pour voir les contraintes
+d'intégrité du document et de l'utilisateur
+
+exemple 
+faculté: 1 = genie logiciel, 2 = reseaux, 3 = reseaux telecom
+format: 1 = png, 2 = jpg, 3 = pdf
+type document: 1 = document scolaire, 2 = doc administartif
+role_users: 1 = admin, 2 = archiviste, 3 = utilisateur
+
+les formats de date sont considérés comme string pour le moment
+
