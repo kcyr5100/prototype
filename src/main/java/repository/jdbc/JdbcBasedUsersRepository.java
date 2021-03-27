@@ -6,7 +6,7 @@ import java.util.List;
 
 import domain.Users;
 import repository.DataSource;
-import repository.interfaces.IUsersRepository;
+import repository.IUsersRepository;
 
 public class JdbcBasedUsersRepository implements IUsersRepository {
     private DataSource dataSource;

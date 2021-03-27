@@ -2,7 +2,7 @@ package controllers;
 
 import repository.DataSource;
 import repository.MysqlDataSource;
-import repository.interfaces.IDocumentRepository;
+import repository.IDocumentRepository;
 import repository.jdbc.JdbcBasedDocumentRepository;
 import services.IDisplayDocument;
 import services.console.ConsoleDisplayDocuments;

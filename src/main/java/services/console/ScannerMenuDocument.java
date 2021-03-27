@@ -2,7 +2,7 @@ package services.console;
 
 import java.util.Scanner;
 import domain.Documents;
-import repository.interfaces.IDocumentRepository;
+import repository.IDocumentRepository;
 import services.IDisplayDocument;
 import services.IMenuDocument;
 

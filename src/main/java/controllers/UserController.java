@@ -2,7 +2,7 @@ package controllers;
 
 import repository.DataSource;
 import repository.MysqlDataSource;
-import repository.interfaces.IUsersRepository;
+import repository.IUsersRepository;
 import repository.jdbc.JdbcBasedUsersRepository;
 import services.IDisplayUser;
 import services.console.ConsoleDisplayUsers;

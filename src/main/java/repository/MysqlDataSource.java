@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 
 public class MysqlDataSource implements DataSource {
     public static final String DB_USER = "jhipster";
-    public static final String DB_PASSWORD = "latinferb";
+    public static final String DB_PASSWORD = "passer";
     public static final String NOM_BASE = "jee_project_ged";
 
     public static final String IP = "localhost";

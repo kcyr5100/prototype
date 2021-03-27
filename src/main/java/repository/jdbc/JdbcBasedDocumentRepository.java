@@ -6,7 +6,7 @@ import java.util.List;
 
 import domain.Documents;
 import repository.DataSource;
-import repository.interfaces.IDocumentRepository;
+import repository.IDocumentRepository;
 
 public class JdbcBasedDocumentRepository implements IDocumentRepository {
     private DataSource dataSource;
@@ -54,7 +54,7 @@ public class JdbcBasedDocumentRepository implements IDocumentRepository {
             statement.setString(1,document.getTitle());
             statement.setString(2, document.getFileName());
             statement.setString(3, document.getProductionDate());
-            statement.setString(4, document.getCreatedAt());
+            statement.setDate(4, (Date) document.getCreatedAt());
             statement.setInt(5, document.getFormat());
             statement.setInt(6, document.getDocumentType());
             statement.setInt(7, document.getFaculty());
@@ -80,7 +80,7 @@ public class JdbcBasedDocumentRepository implements IDocumentRepository {
             statement.setString(1,document.getTitle());
             statement.setString(2, document.getFileName());
             statement.setString(3, document.getProductionDate());
-            statement.setString(4, document.getCreatedAt());
+            statement.setDate(4, (Date) document.getCreatedAt());
             statement.setInt(5, document.getFormat());
             statement.setInt(6, document.getDocumentType());
             statement.setInt(7, document.getFaculty());

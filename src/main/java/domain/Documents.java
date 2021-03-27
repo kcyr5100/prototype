@@ -1,35 +1,32 @@
 package domain;
 
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
+
+import java.util.Date;
 
 public class Documents {
     private int id;
     private String title;
     private String fileName;
     private String productionDate;
-    private String createdAt;
+    private Date createdAt;
     private int format;
     private int documentType;
     private int faculty;
+    private Tag[] tags;
 
     public Documents(int id, String title, String fileName, String productionDate, int format, int documentType, int faculty){
         this.id = id;
         this.title = title;
         this.fileName = fileName;
         this.productionDate = productionDate;
-        SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
-        Calendar calendar = Calendar.getInstance();
-        this.createdAt = dateFormat.format(calendar.getTime());
+        this.createdAt = new Date();
         this.format = format;
         this.documentType = documentType;
         this.faculty = faculty;
     }
 
     public Documents() {
-        SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
-        Calendar calendar = Calendar.getInstance();
-        this.createdAt = dateFormat.format(calendar.getTime());
+        this.createdAt = new Date();
     }
 
     public int getId(){
@@ -50,7 +47,7 @@ public class Documents {
     public String getProductionDate(){
         return this.productionDate;
     }
-    public String getCreatedAt(){
+    public Date getCreatedAt(){
         return this.createdAt;
     }
     public void setProductionDate(String productionDate){

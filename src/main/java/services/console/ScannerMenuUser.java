@@ -1,7 +1,7 @@
 package services.console;
 
 import domain.Users;
-import repository.interfaces.IUsersRepository;
+import repository.IUsersRepository;
 import services.IDisplayUser;
 import services.IMenuUser;
 
