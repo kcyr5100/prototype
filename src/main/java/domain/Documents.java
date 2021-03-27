@@ -1,6 +1,5 @@
 package domain;
 
-
 import java.util.Date;
 
 public class Documents {
@@ -14,7 +13,7 @@ public class Documents {
     private int faculty;
     private Tag[] tags;
 
-    public Documents(int id, String title, String fileName, String productionDate, int format, int documentType, int faculty){
+    public Documents(int id, String title, String fileName, String productionDate, int format, int documentType, int faculty, Tag[] tags){
         this.id = id;
         this.title = title;
         this.fileName = fileName;
@@ -23,6 +22,7 @@ public class Documents {
         this.format = format;
         this.documentType = documentType;
         this.faculty = faculty;
+        this.tags = tags;
     }
 
     public Documents() {
@@ -70,5 +70,13 @@ public class Documents {
     }
     public void setFaculty(int faculty){
         this.faculty = faculty;
+    }
+
+    public Tag[] getTags() {
+        return tags;
+    }
+
+    public void setTags(Tag[] tags) {
+        this.tags = tags;
     }
 }

@@ -3,6 +3,8 @@ package repository.jdbc;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.text.SimpleDateFormat;
+import java.text.DateFormat;
 
 import domain.Documents;
 import repository.DataSource;
@@ -10,6 +12,7 @@ import repository.IDocumentRepository;
 
 public class JdbcBasedDocumentRepository implements IDocumentRepository {
     private DataSource dataSource;
+    DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
     public JdbcBasedDocumentRepository(DataSource dataSource){
         this.dataSource = dataSource;
     }
@@ -54,7 +57,7 @@ public class JdbcBasedDocumentRepository implements IDocumentRepository {
             statement.setString(1,document.getTitle());
             statement.setString(2, document.getFileName());
             statement.setString(3, document.getProductionDate());
-            statement.setDate(4, (Date) document.getCreatedAt());
+            statement.setString(4, dateFormat.format(document.getCreatedAt()));
             statement.setInt(5, document.getFormat());
             statement.setInt(6, document.getDocumentType());
             statement.setInt(7, document.getFaculty());
@@ -80,7 +83,7 @@ public class JdbcBasedDocumentRepository implements IDocumentRepository {
             statement.setString(1,document.getTitle());
             statement.setString(2, document.getFileName());
             statement.setString(3, document.getProductionDate());
-            statement.setDate(4, (Date) document.getCreatedAt());
+            statement.setString(4, dateFormat.format(document.getCreatedAt()));
             statement.setInt(5, document.getFormat());
             statement.setInt(6, document.getDocumentType());
             statement.setInt(7, document.getFaculty());
