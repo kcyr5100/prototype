@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-    <p>Hello world</p>
+    <p>Bienvenu dans la bibliothèque OcenStar</p>
 </body>
 </html>
